@@ -1,0 +1,140 @@
+body{
+	font-size: 1em;/* comentario */
+	font-family: 'Poiret One', cursive;
+	
+
+}
+
+
+style {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(../fonts/HrI4ZJpJ3Fh0wa5ofYMK8fk_vArhqVIZ0nv9q090hN8) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+.container{
+	width: 90%;
+	margin: 0 5%;
+}
+/* -- Colores ---------
+--------- */
+
+.header-container{
+	border-bottom: 20px solid #E44d26;
+}
+
+.footer-container, .main aside{
+	border-top: 20px solid #E44d26;
+}
+.header-container,
+.footer-container,
+.main aside{
+	background: #F16529;
+}
+.title{
+	color: white;
+}
+
+/* estio telefono */
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav a{
+	display: block;
+	margin-bottom: 10px;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	background: #E44d26;
+}
+nav a:visited{
+	color: white;
+}
+nav a:hover{
+	text-decoration: underline;
+}
+.main{
+	padding: 30px 0;
+}
+.main article h1{
+	font-size: 2em;	
+}
+.main aside{
+	color:white;
+	padding: 0px 5%;
+}
+
+.footer-container footer{
+	color: white;
+	padding: 20px 0;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+/*  estilo para pantallas más anchas que 480px 
+  */
+@media only screen and (min-width: 480px){
+	h1{
+		color: red;
+	}
+	nav a{
+		float: left;
+		width: 27%;
+		margin: 0 1.7%;
+		padding: 25px 2%;
+		margin-bottom: 0;
+	}
+
+	nav li:first-child a{
+		margin-left: 0;
+	}
+	nav li:last-child a{
+		margin-right: 0;
+	}
+	nav ul li{
+		display: inline;
+	}
+
+
+}/* min-width: 480px */
+
+@media only screen and (min-width: 850px)
+{
+	.header-container,
+	.main aside {
+		-moz-box-shadow: 25px 9px 34px #000000;
+		-webkit-box-shadow: 25px 9px 34px #000000;
+		box-shadow: 25px 9px 34px #000000;
+	}
+
+	.tittle{
+		float: left;
+	}
+
+	nav{
+		float: right;
+		width: 38%;
+	}
+
+	.main article { /*contenido de los artículos*/		
+		float: right;
+		width: 57%;
+	}
+
+	.main aside {
+		float: left;
+		width: 28%;
+	}
+}

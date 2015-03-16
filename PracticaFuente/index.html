@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tarea</title>
+    <style type="text/css">
+
+    </style>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+   
+
+    <script type="text/javascript">
+    	//alert('Hola Mundo');
+
+    	
+    	function calcula(operacion){
+    		var gradosc= document.getElementById("gradosc").value;   		
+    	    var result = (eval(gradosc+operacion+9)/5)+32;
+    		document.calc.resultado.value= result;
+    	}
+    	
+        function calculaP(operacion){
+            var pesosm= document.getElementById("pesosm").value;          
+            var total = eval(pesosm+operacion+14.99);
+            document.calcd.resulta.value= total;
+        }
+
+    </script>
+  </head>
+  <body>
+    <div class="container text-center">
+        <h2>Convertidor de grados Celcius</h2>
+    </div>
+    
+
+    <div class="container text-center">
+    	<div class="row">
+    		<div class="col-md-12">
+    			<form name="calc">
+    				<label for="gradosc">Grados Celcius</label>
+    				<input type="number" value="" placeholder="Inserta en °C" name="gradosc" id="gradosc"
+    				class="form-control text-center">
+    						
+                    <div>
+                        <H6></H6>
+                    <input type="button" value="Convertir"
+                    onclick="calcula('*')"
+                    class= "btn btn-danger">
+                    </div>
+    				
+
+                    <div><label for="gradosc">Grados Farenheit</label></div>
+    				<input type="text" value="" placeholder="Resultado en °F"
+    				name= "resultado"
+    				class="form-control text-center">
+    			</form>
+    		</div>
+        </div>
+            <div class="container text-center">
+                <h2>Convertidor de Divisas</h2>
+            </div>
+    		<div class="row">
+                <div class="col-md-12">
+    			<form name="calcd">
+                    <label for="pesosm">Dolares</label>
+                    <input type="text" value="" placeholder="Inserta cantidad en Dolares" name="pesosm" id="pesosm"
+                    class="form-control text-center">
+
+                    <div>
+                        <H6></H6>
+                    <input type="button" value="Convertir"
+                    onclick="calculaP('*')"
+                    class= "btn btn-success">
+                    </div>
+
+                    <div><label for="pesosm">Pesos Mexicanos</label>
+                    <input type="text" value="" placeholder="Resultado en Pesos Mexicanos"
+                    name="resulta"
+                    class="form-control text-center">
+                    </div>
+                </form>
+                </div>
+    		</div>
+    	
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  </body>
+</html>

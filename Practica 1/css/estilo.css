@@ -1,0 +1,193 @@
+body 
+{
+
+	font-size: 1em; /* in  cm px em -- proporcional al tamaño que tenga por default*/
+	font-family: Helvetica;
+}
+
+
+.container 
+{
+
+	  width: 90%;
+	  margin: 0 5%;
+	 /* padding: 2px 4px 10px 0px; */
+	/*  margin: : 40 px; */
+}
+
+table{
+	width: 100%;
+	border: 1px solid black;
+}
+td, th
+{
+	border: 1px solid black;
+}
+
+.header-container
+{
+   border-bottom: 20px solid #E44D26;
+}
+
+.footer-container, .main aside
+{
+
+ border-top: border-bottom: 20px solid #E44D26;
+} 
+
+
+.header-container, .footer-container, .main aside
+{
+	background: #F16529;
+}
+
+.title {color: white;}
+
+
+/* Resolucion estilo celular */
+nav a{
+ margin: 0;
+ padding: 0;
+
+
+}
+
+
+ul{
+
+
+ margin: 0;
+ padding: 0;
+}
+
+nav a{
+display: block;
+ margin-bottom: 10px;
+ padding: 15px 0;
+ text-align: center;
+ text-decoration:  none;
+ font-weight: bold;
+color: white;
+background: #E44D26;
+}
+
+
+
+nav a:visited
+{
+ color: white;
+}
+
+nav a:hover 
+{
+	text-decoration: underline;
+} 
+
+.main{
+	padding: 30px 0;
+}
+
+.main article h1{
+	font-size: 2em;
+}
+
+.main aside{
+	color: white;
+	padding: 0px 5%;
+}
+
+.footer-container footer{
+	color: white;
+	padding: 20px 0;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content:" ";
+	display: table;
+}
+
+
+.clearfix:after{
+	clear: both;
+}
+
+
+/* estilo para pantallas más anchas que 480px */
+@media only screen and (min-width: 480px)
+{
+	h2{
+		color: red;
+	}
+	
+	nav a{
+		float:left;
+		width: 27%;
+		margin: 0 1.7%;
+		padding: 25px 2%;
+		margin-bottom: 0;
+	}
+	
+	
+	nav li:first-child a{
+		margin-left: 0;
+	}
+	nav li:last-child a{
+		margin-right: 0;
+	}
+	
+	nav ul li{
+		display:inline;
+	}
+
+	th{
+		border: 3px solid black;
+	}
+	
+}
+
+/* estilo para pantallas más anchas que 850px */
+@media only screen and (min-width: 850px)
+{
+	.header-container,
+	.main aside {
+		-moz-box-shadow: 25px 9px 34px #000000;
+-webkit-box-shadow: 25px 9px 34px #000000;
+box-shadow: 25px 9px 34px #000000;
+	}
+
+	.tittle{
+		float: left;
+	}
+
+	nav{
+		float: right;
+		width: 38%;
+	}
+
+	.main article { /*contenido de los artículos*/		
+		float: right;
+		width: 57%;
+	}
+
+	.main aside {
+		float: left;
+		width: 28%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
